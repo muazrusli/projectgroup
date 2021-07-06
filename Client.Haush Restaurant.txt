@@ -17,7 +17,7 @@ print(Response)
 
 while True:
     print (' BA - Bubur Ayam \n IBC - Ice Blended Chocolate \n IBS - Ice Blended Strawberry \n Q - Quit')
-    table = input('\nMasukkan Nombor Meja : ')
+    meja = input('\nMasukkan Nombor Meja : ')
     Input = input('\nOrder makanan anda : ')
     
     if Input == 'BA' :
