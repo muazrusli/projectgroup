@@ -22,34 +22,34 @@ while True:
     
     if Input == 'BA' :
         option = "BA"
-        table = table
+        meja = meja
         quantity = input('Quantity : ')
         quantity = int(quantity)
-        totprice = 5*quantity
-        l = option + '.' + str(table) + '.' + str(quantity) + '.' + str(totprice)
+        totharga = 5*quantity
+        l = option + '.' + str(meja) + '.' + str(quantity) + '.' + str(totharga)
         ClientSocket.send(str.encode(l))
     elif Input == 'IBC':
         option = "IBC"
-        table = table
+        meja = meja
         quantity = input('Quantity : ')
         quantity = int(quantity)
-        totprice = 2.5*quantity
-        s = option + '.' + str(table) + '.' + str(quantity) + '.' + str(totprice)
+        totharga = 2.5*quantity
+        s = option + '.' + str(meja) + '.' + str(quantity) + '.' + str(totharga)
         ClientSocket.send(str.encode(s))
     elif Input == 'IBS':
         option = "IBS"
-        table = table
+        meja = meja
         quantity = input('Quantity : ')
         quantity = int(quantity)
-        totprice = 3*quantity
-        e = option + '.' + str(table) + '.' + str(quantity) + '.' + str(totprice)
+        totharga = 3*quantity
+        e = option + '.' + str(meja) + '.' + str(quantity) + '.' + str(totharga)
         ClientSocket.send(str.encode(e))
     elif Input == "Q":
         option = "Q"
-        table = "0"
+        meja = "0"
         quantity = "0"
-        totprice = "0"
-        f = option + '.' + str(table) + '.' + str(quantity) + '.' + str(totprice)
+        totharga = "0"
+        f = option + '.' + str(meja) + '.' + str(quantity) + '.' + str(totharga)
         ClientSocket.send(str.encode(f))
         print ('TERIMA KASIH, JUMPA LAGI!! \n')
         ClientSocket.close()
